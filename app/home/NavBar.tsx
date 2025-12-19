@@ -1,74 +1,69 @@
-"use client";
 
-import React, { useState } from "react";
-import { Menu, ConfigProvider } from "antd";
-import type { MenuProps } from "antd";
-import { useRouter } from "next/navigation"; // Next.js 13 App Router
+"use client"
 
-const items: MenuProps["items"] = [
-  { label: "Home", key: "home" },
-  { label: "About", key: "about" },
-  { label: "Products", key: "products" },
-  { label: "Contact Us", key: "contact" },
-];
+import * as React from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { usePathname } from "next/navigation"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu"
+import { cva } from "class-variance-authority"
 
-const App: React.FC = () => {
-  const [current, setCurrent] = useState("home");
-  const router = useRouter();
+// Tailwind + CVA styles for NavigationMenu triggers
+const navigationMenuTriggerStyle = cva(
+  "px-3 py-2 rounded-md text-sm font-medium transition-colors",
+  {
+    variants: {
+      selected: {
+        true: "text-[#D4AB45]",
+        false: "text-gray-800 hover:text-[#D4AB45]",
+      },
+    },
+    defaultVariants: {
+      selected: false,
+    },
+  }
+)
 
-  const onClick: MenuProps["onClick"] = (e) => {
-    setCurrent(e.key);
+export default function NavBar() {
+  const pathname = usePathname() // get current route
 
-    // Navigate based on the key
-    switch (e.key) {
-      case "home":
-        router.push("/"); // Home page
-        break;
-      case "about":
-        router.push("/Aboutus"); // About page
-        break;
-      case "products":
-        router.push("/Products"); // Products page
-        break;
-      case "contact":
-        router.push("/Contactus"); // Contact page
-        break;
-      default:
-        break;
-    }
-  };
+  const menuItems = [
+    { href: "/", label: "Home" },
+    { href: "/Aboutus", label: "About s" },
+    { href: "/Products", label: "Products" },
+    { href: "/Contactus", label: "Contact Us" },
+  ]
 
   return (
-    <div className="w-full flex items-center justify-around bg-white px-6">
+    <div className="z-50 relative flex items-center justify-around w-full px-6 py-4 bg-white shadow-md">
       {/* Logo */}
-      <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
+      <Link href="/" className="flex items-center">
+        <Image src="/Jazirat_logo1.png" alt="Logo" width={220} height={40} />
+      </Link>
 
-      {/* Menu */}
-      <ConfigProvider
-        theme={{
-          components: {
-            Menu: {
-              itemSelectedColor: "#16a34a", // selected text color
-              itemHoverColor: "#16a34a", // hover text color
-              horizontalItemSelectedColor: "#16a34a",
-              horizontalItemHoverColor: "#16a34a",
-              activeBarBorderWidth: 2,
-              activeBarHeight: 2,
-              activeBarColor: "#16a34a", // underline color
-            },
-          },
-        }}
-      >
-        <Menu
-          onClick={onClick}
-          selectedKeys={[current]}
-          mode="horizontal"
-          items={items}
-          className="border-none"
-        />
-      </ConfigProvider>
+      {/* Navigation Menu */}
+      <NavigationMenu className="flex justify-center flex-1">
+        <NavigationMenuList className="flex space-x-4">
+          {menuItems.map((item) => (
+            <NavigationMenuItem key={item.href}>
+              <NavigationMenuLink
+                asChild
+                className={navigationMenuTriggerStyle({
+                  selected: pathname === item.href,
+                })}
+              >
+                <Link href={item.href}>{item.label}</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+          ))}
+        </NavigationMenuList>
+      </NavigationMenu>
     </div>
-  );
-};
-
-export default App;
+  )
+}

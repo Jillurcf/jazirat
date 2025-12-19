@@ -7,8 +7,8 @@ const { Footer } = Layout;
 
 const AppFooter: React.FC = () => {
   return (
-    <Footer style={{ textAlign: "center", backgroundColor: "#000000" }}>
-      © 2017 Jazirat Al. All rights reserved.
+    <Footer style={{ textAlign: "center", backgroundColor: "#D4AB45" }}>
+     <h1 className="text-[#FFFFFF] py-2"> © 2017 Jazirat Al Aibriz Al Khalis. All rights reserved.</h1>
     </Footer>
   );
 };
