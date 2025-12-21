@@ -6,10 +6,11 @@ import { Card } from "antd";
 const { Meta } = Card;
 
 const cardsData = [
-  { title: "Europe Street beat", description: "www.instagram.com", img: "/BannerImg1.jpg" },
-  { title: "London Park", description: "www.instagram.com", img: "/BannerImg2.jpg" },
-  { title: "New York City", description: "www.instagram.com", img: "/BannerImg3.jpg" },
-  { title: "Tokyo Tower", description: "www.instagram.com", img: "/BannerImg4.jpg" },
+  { title: "Hijab", description: "", img: "/BannerImg1.jpg" },
+  { title: "Kurti", description: "", img: "/BannerImg2.jpg" },
+  { title: "Gown", description: "", img: "/BannerImg3.jpg" },
+  { title: "Abaya", description: "", img: "/Abaya1.jpg" },
+  { title: "Borka", description: "", img: "/BorkaCategory.jpg" },
 ];
 
 const CardSection: React.FC = () => {
@@ -19,7 +20,7 @@ const CardSection: React.FC = () => {
         <Card
           key={index}
           hoverable
-          style={{ width: 240 }}
+          style={{ width: 240, }}
           cover={<img draggable={false} alt={card.title} src={card.img} />}
         >
           <Meta title={card.title} description={card.description} />

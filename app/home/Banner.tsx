@@ -5,7 +5,8 @@ import { Carousel } from "antd"
 import Image from "next/image"
 
 const images = [
-  "/BannerImg5.jpg",
+    "/BannerImg5.jpg",
+  "/BannerOriginal.jpg",
   "/BannerImg1.jpg",
   "/BannerImg2.jpg",
   "/BannerImg3.jpg",

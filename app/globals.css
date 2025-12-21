@@ -123,3 +123,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.font-arabic {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+.font-english {
+  font-family: 'Geist Sans', 'Inter', sans-serif;
+}
