@@ -7,10 +7,10 @@ import ReadMoreCatDes from "@/app/home/component/ReadMoreCatDes";
 const MasterHistory = () => {
     const aboutMastr = `
      
-                        Md khorsed Alam is a highly skilled master tailor and the proud owner of the shop, bringing over 15 years of professional experience in the tailoring industry. Based in Dubai, he is widely recognized for his expertise in both men’s and ladies’ tailoring, delivering garments that combine precision, comfort, and elegant finishing.
+                        Md khorshed Alam is a highly skilled master tailor and the proud owner of the shop, bringing over 15 years of professional experience in the tailoring industry. Based in Dubai, he is widely recognized for his expertise in both men’s and ladies’ tailoring, delivering garments that combine precision, comfort, and elegant finishing.
                  
                   
-                        With a strong commitment to quality craftsmanship, Md khorsed Alam personally oversees every stage of production to ensure excellent fabric selection, perfect fitting, and long-lasting results. His shop is known for good staff management, maintaining a professional and friendly environment that guarantees consistent service quality.
+                        With a strong commitment to quality craftsmanship, Md khorshed Alam personally oversees every stage of production to ensure excellent fabric selection, perfect fitting, and long-lasting results. His shop is known for good staff management, maintaining a professional and friendly environment that guarantees consistent service quality.
                  
                    
 
@@ -73,7 +73,7 @@ const MasterHistory = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Text */}
                 <div className="w-full md:w-1/2">
-                    <h3 className="text-xl font-bold mb-4">Md khorsed Alam – Master Tailor & Shop Owner</h3>
+                    <h3 className="text-xl font-bold mb-4">Md khorshed Alam – Master Tailor & Shop Owner</h3>
                     <ReadMoreCatDes text={aboutMastr} maxWords={50} />
                 </div>
 
