@@ -73,7 +73,7 @@ const MasterHistory = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Text */}
                 <div className="w-full md:w-1/2">
-                    <h3 className="text-xl font-bold mb-4">Md. Khorshed – Master Tailor & Shop Owner</h3>
+                    <h3 className="text-xl font-bold mb-4">Md khorsed Alam – Master Tailor & Shop Owner</h3>
                     <ReadMoreCatDes text={aboutMastr} maxWords={50} />
                 </div>
 
