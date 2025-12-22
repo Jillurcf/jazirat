@@ -18,7 +18,7 @@ const MasterHistory = () => {
                    `
 
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:my-12 md:my-8 ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:my-12 md:my-8 mb-4">
             {/* Section Title */}
             <div className="text-center my-8">
                 <h2 className="text-2xl sm:text-3xl font-bold text-[#D4AB45]">
