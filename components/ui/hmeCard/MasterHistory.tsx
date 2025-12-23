@@ -7,7 +7,7 @@ import ReadMoreCatDes from "@/app/home/component/ReadMoreCatDes";
 const MasterHistory = () => {
     const aboutMastr = `
      
-                        Md khorshed Alam is a highly skilled master tailor and the proud owner of the shop, bringing over 15 years of professional experience in the tailoring industry. Based in Dubai, he is widely recognized for his expertise in both men’s and ladies’ tailoring, delivering garments that combine precision, comfort, and elegant finishing.
+                        Md khorshed Alam is a highly skilled master tailor and the proud owner of the shop, bringing over 15 years of professional experience in the tailoring industry. Based in Oman, he is widely recognized for his expertise in both men’s and ladies’ tailoring, delivering garments that combine precision, comfort, and elegant finishing.
                  
                   
                         With a strong commitment to quality craftsmanship, Md khorshed Alam personally oversees every stage of production to ensure excellent fabric selection, perfect fitting, and long-lasting results. His shop is known for good staff management, maintaining a professional and friendly environment that guarantees consistent service quality.
