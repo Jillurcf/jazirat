@@ -4,6 +4,7 @@ import NavBar from "./home/NavBar";
 import Banner from "./home/Banner";
 import ProductCategory from "./home/ProductCategory";
 import MasterHistory from "@/components/ui/hmeCard/MasterHistory";
+import VideoSection from "@/components/Video/VideoSection";
 
 const Page = () => {
   return (
@@ -13,6 +14,7 @@ const Page = () => {
       {/* Banner and products */}
       <Banner />
       <ProductCategory />
+      <VideoSection />
       <MasterHistory />
     </div>
   );
