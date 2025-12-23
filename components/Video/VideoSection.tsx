@@ -36,7 +36,7 @@ export default function VideoSection() {
                   controls
                   preload="metadata"
                 >
-                  <source src="/videos/1223.mp4" type="video/mp4" />
+                  <source src="https://www.youtube.com/watch?v=b4a5ZaHR51g" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
