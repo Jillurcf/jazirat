@@ -75,7 +75,7 @@ export default function VideoSection() {
               <div className="aspect-video w-full">
                 <iframe
                   className="w-full h-full rounded-lg"
-                  src="https://youtube.com/shorts/uY2AeIu9PYE"
+                  src="https://www.youtube.com/watch?v=7wlnU9EsJmA"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
