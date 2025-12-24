@@ -31,21 +31,22 @@ export default function VideoSection() {
           <Card className="w-full lg:w-1/2">
             <CardContent className="p-4">
               <div className="aspect-video w-full">
-                <video
-                  className="w-full h-full rounded-lg object-cover"
-                  controls
-                  preload="metadata"
-                >
-                  <source src="https://www.youtube.com/watch?v=b4a5ZaHR51g" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  className="w-full h-full rounded-lg"
+                  src="https://www.youtube.com/embed/b4a5ZaHR51g"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
             </CardContent>
           </Card>
 
+
           {/* Text Content */}
           <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
-           
+
 
             <p className="text-gray-700 lg:text-2xl text-sm md:text-base leading-relaxed">
               We specialize in crafting elegant Arabic women’s garments that
