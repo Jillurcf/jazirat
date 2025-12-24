@@ -25,89 +25,54 @@ export default function VideoSection() {
         </div>
 
         {/* Content */}
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
+        <div className="flex gap-8">
+          <div className="flex-1">
 
-          {/* Video */}
-          <Card className="w-full lg:w-1/2">
-            <CardContent className="p-4">
-              <div className="aspect-video w-full">
-                <iframe
-                  className="w-full h-full rounded-lg"
-                  src="https://youtu.be/7wlnU9EsJmA"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </CardContent>
-          </Card>
+            {/* Video */}
+            <Card className="w-full">
+              <CardContent className="p-4">
+                <div className="aspect-video w-full">
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/06BRt8JOkTs"
 
-
-          {/* Text Content */}
-          <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </CardContent>
+            </Card>
 
 
-            <p className="text-gray-700 lg:text-2xl text-sm md:text-base leading-relaxed">
-              We specialize in crafting elegant Arabic women’s garments that
-              combine tradition with modern design. Our services include
-              custom-made abayas, kaftans, jalabiyas, and modest wear tailored to
-              perfection. We use premium fabrics, detailed hand embroidery, and
-              precise stitching to ensure comfort, elegance, and long-lasting
-              quality.
-            </p>
+            {/* Text Content */}
 
-            <p className="text-gray-700 lg:text-2xl text-sm md:text-base leading-relaxed text-right">
-              نحن متخصصون في تصميم وخياطة أزياء نسائية عربية أنيقة تجمع بين
-              التراث والتصاميم العصرية. نقدم خدمة التفصيل حسب الطلب للعبايات،
-              القفاطين، الجلابيات، والملابس المحتشمة، باستخدام أقمشة فاخرة
-              وتطريز يدوي متقن وخياطة دقيقة. نحرص على تقديم قطع مريحة وعالية
-              الجودة تعكس الأصالة العربية وتواكب أحدث صيحات الموضة.
-            </p>
+
           </div>
+          <div className="flex-1">
 
-        </div>
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
-
-          {/* Video */}
-          <Card className="w-full lg:w-1/2">
-            <CardContent className="p-4">
-              <div className="aspect-video w-full">
-                <iframe
-                  className="w-full h-full rounded-lg"
-                  src="https://www.youtube.com/watch?v=7wlnU9EsJmA"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </CardContent>
-          </Card>
+            {/* Video */}
+            <Card className="w-full">
+              <CardContent className="p-4">
+                <div className="aspect-video w-full">
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/7wlnU9EsJmA"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </CardContent>
+            </Card>
 
 
-          {/* Text Content */}
-          <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
+            {/* Text Content */}
 
 
-            <p className="text-gray-700 lg:text-2xl text-sm md:text-base leading-relaxed">
-              We specialize in crafting elegant Arabic women’s garments that
-              combine tradition with modern design. Our services include
-              custom-made abayas, kaftans, jalabiyas, and modest wear tailored to
-              perfection. We use premium fabrics, detailed hand embroidery, and
-              precise stitching to ensure comfort, elegance, and long-lasting
-              quality.
-            </p>
-
-            <p className="text-gray-700 lg:text-2xl text-sm md:text-base leading-relaxed text-right">
-              نحن متخصصون في تصميم وخياطة أزياء نسائية عربية أنيقة تجمع بين
-              التراث والتصاميم العصرية. نقدم خدمة التفصيل حسب الطلب للعبايات،
-              القفاطين، الجلابيات، والملابس المحتشمة، باستخدام أقمشة فاخرة
-              وتطريز يدوي متقن وخياطة دقيقة. نحرص على تقديم قطع مريحة وعالية
-              الجودة تعكس الأصالة العربية وتواكب أحدث صيحات الموضة.
-            </p>
           </div>
-
         </div>
       </div>
     </section>
