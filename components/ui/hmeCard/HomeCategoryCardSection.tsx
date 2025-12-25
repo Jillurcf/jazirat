@@ -13,7 +13,7 @@ const cardsData = [
   { titleEn: "Borka", titleAr: "بورك", descriptionEn: "Fabric: Soft and comfortable premium Dubai cherry, chiffon, cotton, georgette, or rayon, crafted to ensure maximum comfort. Design: From classic black or subtle plain styles to luxurious looks, we create modern cutwork and stone work with contrast embroidery in various colors (black, navy blue, pastel). Embroidery: We design garments attractively using hand or machine embroidery, lace, sequins, and stone embellishments.", descriptionAr: "القماش: شيفون، قطن، جورجيت، أو رايون، مصنوع لضمان أقصى درجات الراحة. التصميم: بدءًا من الأسود الكلاسيكي أو التصاميم البسيطة الهادئة وصولًا إلى الإطلالات الفاخرة، نقدم تطريزات بألوان متباينة (الأسود، الأزرق الكحلي، الباستيل) مع قصّات عصرية وأعمال حجرية. التطريز: نقوم بتصميم الملابس بشكل جذاب باستخدام التطريز اليدوي أو الآلي، والدانتيل، والترتر، وأعمال الأحجار.", img: "/BorkaCategory.jpg" },
 ];
 
-const CardSection: React.FC = () => {
+const HomeCategoryCardSection: React.FC = () => {
   return (
     <div className="flex justify-center lg:w-[70%] mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 bg-gray-100">
@@ -46,4 +46,4 @@ const CardSection: React.FC = () => {
   );
 };
 
-export default CardSection;
+export default HomeCategoryCardSection;

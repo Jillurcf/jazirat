@@ -1,5 +1,6 @@
 "use client";
 
+import CallingSection from "@/components/ui/hmeCard/CallingSection";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -36,9 +37,9 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">Contact Us</h1>
-
+    <div className="max-w-3xl mx-auto p-6">
+      <h1 className="text-3xl text-center text-[#D4AB45] font-bold mb-6 lg:py-12">Contact Us</h1>
+      <CallingSection />
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
           name="name"
@@ -86,6 +87,16 @@ export default function ContactPage() {
           {loading ? "Sending..." : "Send Message"}
         </button>
       </form>
+      {/* ======================Address section ======================= */}
+      <div className="lg:my-12">
+        <h6 className="text-xl text-[#D4AB45] font-bold">Address:</h6>
+        <p className="text-xs">CR No. 1208992 <br />
+          Shop No. 14 <br />
+          Al Salami <br />
+          Industrial Estate, Wilayat Ibri, S of Oman. <br />
+          Mob: 98147797, 98765355
+        </p>
+      </div>
     </div>
   );
 }

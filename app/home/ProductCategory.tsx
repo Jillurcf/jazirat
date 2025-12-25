@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'antd';
-import CardSection from '@/components/ui/hmeCard/CardSection';
+import HomeCategoryCardSection from '@/components/ui/hmeCard/HomeCategoryCardSection';
+
 
 
 const ProductCategory: React.FC = () => (
@@ -12,7 +13,7 @@ const ProductCategory: React.FC = () => (
                 <p className="text-gray-600 mt-2">Explore our diverse range of product categories</p>
                 <p className="text-gray-600 mt-2">اكتشف تشكيلتنا الواسعة من فئات المنتجات</p>
             </div>
-            <CardSection />
+            <HomeCategoryCardSection />
         </div>
     </div>
 );
