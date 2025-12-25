@@ -7,29 +7,18 @@ export default function VideoSection() {
     <section className="w-full px-4 md:px-8 lg:px-0">
       <div className="max-w-6xl mx-auto">
 
-        {/* Header */}
-        <div className="text-center my-8 md:my-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#D4AB45]">
-            What We Offer
-          </h2>
-          <h2 className="text-2xl md:text-3xl font-bold text-[#D4AB45] mt-1">
-            ماذا نقدم
-          </h2>
-
-          <p className="text-gray-600 mt-3 text-sm md:text-base">
-            Explore our diverse range of product categories
-          </p>
-          <p className="text-gray-600 text-sm md:text-base">
-            اكتشف تشكيلتنا الواسعة من فئات المنتجات
-          </p>
-        </div>
 
         {/* Content */}
-        <div className="flex gap-8">
+        <div className="lg:flex gap-14">
           <div className="flex-1">
-
+            <h2 className="text-2xl md:text-3xl font-bold text-[#D4AB45]">
+              What We Offer
+            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#D4AB45] mt-1">
+              ماذا نقدم
+            </h2>
             {/* Video */}
-            <Card className="w-full">
+            <Card className="w-full mt-[4%]">
               <CardContent className="p-4">
                 <div className="aspect-video w-full">
                   <iframe
@@ -50,10 +39,15 @@ export default function VideoSection() {
 
 
           </div>
-          <div className="flex-1">
-
+          <div className="flex-1 lg:mt-0  mt-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#D4AB45]">
+              Our Work Environment
+            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#D4AB45]  mt-1">
+              ماذا نقدم
+            </h2>
             {/* Video */}
-            <Card className="w-full">
+            <Card className="w-full mt-[4%]">
               <CardContent className="p-4">
                 <div className="aspect-video w-full">
                   <iframe
