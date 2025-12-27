@@ -76,16 +76,16 @@ const Page = () => {
       <div className="lg:w-[60%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((item) => (
           <div
-            key={item.id}
+            key={item?.id}
             className="border w-full rounded-lg p-4 shadow hover:shadow-xl transition duration-200"
           >
             <img
-              src={item.image}
-              alt={item.name}
+              src={item?.image}
+              alt={"Imgae"}
               className="w-full h-auto object-cover rounded"
             />
 
-            <h2 className="text-xl font-semibold mt-3">{item.name}</h2>
+            {/* <h2 className="text-xl font-semibold mt-3">{item?.name}</h2> */}
             <p className="text-gray-600">Price: {item.price || "Negotiable"}</p>
 
             <button
