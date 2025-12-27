@@ -47,6 +47,7 @@ const Banner: React.FC = () => {
   "/BannerOriginal.jpg",
   "/BannerImg1.jpg",
   "/BannerImg2.jpg",
+  "/menClothes.jpg",
   "/BannerImg3.jpg",
   "/BannerImg4.jpg",
   "/BannerImg7.jpg",

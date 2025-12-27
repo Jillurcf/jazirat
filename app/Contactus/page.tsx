@@ -1,9 +1,13 @@
 "use client";
 
 import CallingSection from "@/components/ui/hmeCard/CallingSection";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function ContactPage() {
+  const [show, setShow] = useState(false);
+  const router = useRouter();
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -34,6 +38,11 @@ export default function ContactPage() {
     } else {
       alert("Failed to send message");
     }
+  };
+
+  const goToContact = () => {
+    setShow(false);
+    router.push("/Contactus");
   };
 
   return (
@@ -88,14 +97,44 @@ export default function ContactPage() {
         </button>
       </form>
       {/* ======================Address section ======================= */}
-      <div className="lg:my-12">
-        <h6 className="text-xl text-[#D4AB45] font-bold">Address:</h6>
-        <p className="text-xs">CR No. 1208992 <br />
-          Shop No. 14 <br />
-          Al Salami <br />
-          Industrial Estate, Wilayat Ibri, S of Oman. <br />
-          Mob: 98147797, 98765355
-        </p>
+      <div className="lg:my-12 lg:flex gap-8">
+        <div>
+          <h6 className="text-xl text-[#D4AB45] font-bold">Address:</h6>
+          <p className="text-xs">CR No. 1208992 <br />
+            Shop No. 14 <br />
+            Al Salami <br />
+            Industrial Estate, Wilayat Ibri, S of Oman. <br />
+            Mob: 98147797, 98765355
+          </p>
+        </div>
+        <>
+          {/* Small image */}
+          <div>
+            <img
+              src="/shop.jpeg"
+              alt="preview"
+              className="w-[15%] cursor-pointer"
+              onClick={() => setShow(true)}
+            />
+          </div>
+
+          {/* Fullscreen image preview modal */}
+          {show && (
+            <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+
+              {/* Cross button */}
+              <button
+                className="absolute top-4 right-4 text-white text-3xl font-bold cursor-pointer"
+                onClick={goToContact}
+              >
+                ✕
+              </button>
+
+              {/* Full size image */}
+              <img src="/shop.jpeg" className="max-w-[90vw] max-h-[90vh]" />
+            </div>
+          )}
+        </>
       </div>
     </div>
   );
