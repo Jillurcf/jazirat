@@ -86,7 +86,7 @@ const Page = () => {
             />
 
             {/* <h2 className="text-xl font-semibold mt-3">{item?.name}</h2> */}
-            <p className="text-gray-600">Price: {item.price || "Negotiable"}</p>
+            <p className="text-gray-600">Price: Negotiable</p>
 
             <button
             onClick={()=>router .push('/Contactus')}
