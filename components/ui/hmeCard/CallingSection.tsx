@@ -12,8 +12,14 @@ const CallingSection = () => {
             </h4>
 
             <div className="text-center mb-6">
-                <div className="mb-4">
-                    <img src="/CallImg.png" alt="decorative line" className="mx-auto" />
+                <div className="mb-4 lg:flex items-center mt-[4%]">
+                    <div className=' flex-1'>
+                        <img src="/CallImg.png" alt="decorative line" className="mx-auto" />
+                    </div>
+
+                    <div className=' flex-1'>
+                        <img src="/Owner.jpeg" alt="decorative line" className="mx-auto lg:w-[30%]" />
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
