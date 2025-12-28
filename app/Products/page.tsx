@@ -65,6 +65,18 @@ const products = [
     // price: 1800,
     image: "/Goodwork9.jpeg",
   },
+  {
+    id: 11,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/menDressEdited3.png",
+  },
+  {
+    id: 12,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/menDressEdited2.jpg",
+  },
 ];
 
 const Page = () => {
@@ -82,7 +94,7 @@ const Page = () => {
             <img
               src={item?.image}
               alt={"Imgae"}
-              className="w-full h-auto object-cover rounded"
+              className="w-full h-[400px] object-cover rounded"
             />
 
             {/* <h2 className="text-xl font-semibold mt-3">{item?.name}</h2> */}
