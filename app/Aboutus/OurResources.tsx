@@ -1,5 +1,6 @@
 import React from 'react'
 import ReadMoreCatDes from '../home/component/ReadMoreCatDes'
+import { Card, CardContent } from "@/components/ui/card"
 
 const OurResources = () => {
     const textEn = `Our tailoring shop is supported by a dedicated team of professionals. We have 10 skilled and experienced tailoring staff who ensure high-quality workmanship, along with 2 delivery personnel responsible for timely and reliable order delivery. In total, our shop operates with a team of 12 staff members.
@@ -40,9 +41,23 @@ const OurResources = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:my-12 md:my-8 mb-4">
 
             <div className='lg:flex justify-between gap-4'>
-                <div className='flex-1'>
-                    <img src="/Car.jpg" alt="" className="w-[90%] h-auto object-cover rounded-lg" />
-                </div>
+                 {/* Video */}
+                <Card className="w-full flex-1 mt-[4%]">
+                    <CardContent className="p-4">
+                        <div className="aspect-video w-full">
+                            <iframe
+                                className="w-full h-full rounded-lg"
+                                src="https://www.youtube.com/embed/OEiMhABWMR0"
+
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
+                    </CardContent>
+                </Card>
+
                 <div className='flex-1'>
                     <h2 className="text-2xl sm:text-3xl font-bold text-[#D4AB45]">
                         Our Resources</h2>

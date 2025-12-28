@@ -1,5 +1,6 @@
 import React from 'react'
 import ReadMoreCatDes from '../home/component/ReadMoreCatDes'
+import { Card, CardContent } from "@/components/ui/card"
 
 const WhatWeDo = () => {
     const textEn = `  We accept all kinds of sewing machine work orders. We make coats, pants, sarees, lehengas, and a blend of modern and traditional styles. We work with fabrics suitable for stone work, sequins, and silk embroidery, such as Dubai cherry, chiffon, and cotton fabrics, all carefully stitched by skilled craftsmen.
@@ -14,11 +15,11 @@ const WhatWeDo = () => {
 
                         كما نقوم بعرض هذه الملابس للبيع في متجرنا.`
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:my-12 md:my-8 mb-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:my-12 md:my-8 mb-4 items-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-[#D4AB45]">
                 What We Do
             </h2>
-            <h4 className="text-xl sm:text-lg font-bold text-gray-300] mt-[2%]">
+            <h4 className="text-xl sm:text-lg font-bold text-gray-300]">
                 Details about what we do...
             </h4>
 
@@ -31,13 +32,22 @@ const WhatWeDo = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className="w-full flex-1 lg:w-full flex justify-center items-start lg:items-center">
-                    <img
-                        src="/imge33Edited.jpg"
-                        alt="image"
-                        className="w-full h-auto object-cover rounded-lg"
-                    />
-                </div>
+                {/* Video */}
+                <Card className="w-full flex-1 ">
+                    <CardContent className="p-4">
+                        <div className="aspect-video w-full">
+                            <iframe
+                                className="w-full h-full rounded-lg"
+                                src="https://www.youtube.com/embed/5UNVX9n2feM"
+
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
+                    </CardContent>
+                </Card>
 
             </div>
         </div>
