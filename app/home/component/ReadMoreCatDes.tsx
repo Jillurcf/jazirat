@@ -56,7 +56,7 @@ const ReadMoreCatDes: React.FC<ReadMoreCatDesProps> = ({ text, maxWords = 50 }) 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setWordsLimit(20); // Mobile view
+        setWordsLimit(10); // Mobile view
       } else {
         setWordsLimit(maxWords); // Desktop/tablet view
       }

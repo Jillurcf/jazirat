@@ -142,7 +142,7 @@ const Product = () => {
             <img
               src={item?.image}
               alt={"Imgae"}
-              className="w-full h-[600px] object-cover rounded"
+              className="w-full h-150 object-cover rounded"
             />
 
             {/* <h2 className="text-xl font-semibold mt-3">{item?.name}</h2> */}

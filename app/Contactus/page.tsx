@@ -99,7 +99,7 @@ export default function ContactPage() {
       {/* ======================Address section ======================= */}
       <div className="lg:my-12 lg:flex gap-8">
         <div>
-          <h6 className="text-xl text-[#D4AB45] font-bold">Address:</h6>
+          <h6 className="text-xl text-[#D4AB45] font-bold mt-[4%]">Address:</h6>
           <p className="text-xs">CR No. 1208992 <br />
             Shop No. 14 <br />
             Al Salami <br />
@@ -113,7 +113,7 @@ export default function ContactPage() {
             <img
               src="/shop.jpeg"
               alt="preview"
-              className="w-[15%] cursor-pointer"
+              className="lg:w-[15%] cursor-pointer mt-[2%]"
               onClick={() => setShow(true)}
             />
           </div>

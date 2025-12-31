@@ -5,7 +5,7 @@ import HomeCategoryCardSection from '@/components/ui/hmeCard/HomeCategoryCardSec
 
 
 const ProductCategory: React.FC = () => (
-    <div className='my-12 flex flex-col items-center'>
+    <div className='my-2 flex flex-col items-center'>
         <div className=''>
             <div className="text-center my-8">
                 <h2 className="text-3xl text-[#D4AB45] font-bold">Product Categories</h2>
