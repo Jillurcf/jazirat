@@ -23,7 +23,7 @@ export default function VideoSection() {
                 <div className="aspect-video w-full">
                   <iframe
                     className="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/06BRt8JOkTs"
+                    src="https://www.youtube.com/embed/EzFgT13Y7P8"
 
                     title="YouTube video player"
                     frameBorder="0"
@@ -52,7 +52,7 @@ export default function VideoSection() {
                 <div className="aspect-video w-full">
                   <iframe
                     className="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/7wlnU9EsJmA"
+                    src="https://www.youtube.com/embed/FkFur6adQNw"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

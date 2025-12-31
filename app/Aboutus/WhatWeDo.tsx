@@ -38,7 +38,7 @@ const WhatWeDo = () => {
                         <div className="aspect-video w-full">
                             <iframe
                                 className="w-full h-full rounded-lg"
-                                src="https://www.youtube.com/embed/5UNVX9n2feM"
+                                src="https://www.youtube.com/embed/SXAjlheuwnM"
 
                                 title="YouTube video player"
                                 frameBorder="0"

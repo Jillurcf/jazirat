@@ -69,17 +69,65 @@ const products = [
     id: 11,
     // name: "Bluetooth Speaker",
     // price: 1800,
-    image: "/menDressEdited3.png",
+    image: "/FinishedProducts/Goodwork10.jpeg",
   },
   {
     id: 12,
     // name: "Bluetooth Speaker",
     // price: 1800,
-    image: "/menDressEdited2.jpg",
+    image: "/FinishedProducts/Goodwork11.jpeg",
+  },
+  {
+    id: 13,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/FinishedProducts/Goodwork12.jpeg",
+  },
+  {
+    id: 14,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/FinishedProducts/Goodwork13.jpeg",
+  },
+  {
+    id: 15,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/FinishedProducts/Goodwork14.jpeg",
+  },
+  {
+    id: 16,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/OmaniKendora.png",
+  },
+  {
+    id: 17,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/OmaniKendora1.jpg",
+  },
+  {
+    id: 18,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/Quweti_Kendora.jpg",
+  },
+  {
+    id: 19,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/Quweti_Kendora2.jpg",
+  },
+  {
+    id: 20,
+    // name: "Bluetooth Speaker",
+    // price: 1800,
+    image: "/Indian_Pakistani.jpg",
   },
 ];
 
-const Page = () => {
+const Product = () => {
    const router = useRouter();
   return (
     <div className="px-6 py-10">
@@ -94,7 +142,7 @@ const Page = () => {
             <img
               src={item?.image}
               alt={"Imgae"}
-              className="w-full h-[400px] object-cover rounded"
+              className="w-full h-[600px] object-cover rounded"
             />
 
             {/* <h2 className="text-xl font-semibold mt-3">{item?.name}</h2> */}
@@ -112,4 +160,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Product;
