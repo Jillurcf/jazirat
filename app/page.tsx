@@ -5,7 +5,6 @@ import Banner from "./home/Banner";
 import ProductCategory from "./home/ProductCategory";
 import MasterHistory from "@/components/ui/hmeCard/MasterHistory";
 import VideoSection from "@/components/Video/VideoSection";
-import MaterialsAndTech from "./home/MaterialsAndTech";
 import Product from "./Products/Product";
 import OurResources from "./Aboutus/OurResources";
 
@@ -18,7 +17,7 @@ const Page = () => {
       <Banner />
       <ProductCategory />
       <VideoSection />
-      <MaterialsAndTech />
+      
       <Product />
       <OurResources />
       <MasterHistory />
